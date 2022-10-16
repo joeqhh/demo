@@ -6,7 +6,7 @@ $(function () {
       window.that = this;
     }
     init() {
-      $(".text").focus();
+      $(".text").focus(); 
       $(".send").on("click", this.send);
       $(".text").on("keyup", function (e) {
         if (e.keyCode != 13) return;
