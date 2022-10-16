@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 40%;
+  height: 600px;
+  margin: 50px auto;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: rgb(240, 240, 240);
+  box-sizing: border-box;
+}
+.box .rb_name {
+  width: 100%;
+  height: 8%;
+  background-color: #ffffff;
+  line-height: 48px;
+  font-size: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.box .chat {
+  position: relative;
+  width: 100%;
+  height: 72%;
+  overflow: auto;
+}
+.box .chat::-webkit-scrollbar {
+  display: none;
+}
+.box .input {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #ffffff;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.box .input .send {
+  position: absolute;
+  right: 40px;
+  bottom: 5px;
+  width: 60px;
+  height: 25px;
+  background-color: rgb(240, 240, 240);
+  border: 0;
+  text-align: center;
+  line-height: 26px;
+  cursor: pointer;
+}
+.box .input .send:hover {
+  background-color: chartreuse;
+}
+.box .input .text {
+  display: block;
+  width: 90%;
+  height: 60%;
+  border: 0;
+  outline: none;
+  margin: 0 auto;
+  resize: none;
+  font-size: 17px;
+}
+.box .input .text::-webkit-scrollbar {
+  display: none;
+}
+.box .chat .cnt {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.box .chat .cnt .userPic {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  background-image: url(../images/user.jfif);
+  background-size: 100% 100%;
+}
+.box .chat .cnt .user_text {
+  float: right;
+  position: relative;
+  background-color: rgb(158, 234, 106);
+  line-height: 35px;
+  padding: 0 10px;
+  max-width: 300px;
+  overflow-wrap: break-word;
+  margin-right: 10px;
+}
+.box .chat .cnt .user_text::before {
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  content: "";
+  display: block;
+  border: 8px solid transparent;
+  border-left: 8px solid rgb(158, 234, 106);
+}
+.box .chat .cnt .rbPic {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  background-image: url(../images/robot.jpg);
+  background-size: 100% 100%;
+}
+.box .chat .cnt .rb_text {
+  float: left;
+  position: relative;
+  background-color: #ffffff;
+  line-height: 35px;
+  padding: 0 10px;
+  max-width: 300px;
+  overflow-wrap: break-word;
+  margin-left: 10px;
+}
+.box .chat .cnt .rb_text::before {
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  content: "";
+  display: block;
+  border: 8px solid transparent;
+  border-right: 8px solid #ffffff;
+}
